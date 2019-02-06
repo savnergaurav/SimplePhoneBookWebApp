@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+    </script>
+    <style>
+        #create-contact {
+            display: none;
+        }
+        #create-group {
+            display: none;
+        }
+        #edit-contact{
+            display: none;
+        }
+        #edit-group{
+            display: none;
+        }
+        #contact-group{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="">
+        <div id="create-contact">
+            <h1>Create Contact</h1>
+            <input type="text" name="fname" id="fname" placeholder="First Name" />
+            <br>
+            <input type="text" name="lname" id="lname" placeholder="Last Name" />
+            <br>
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <br>
+            <input type="text" name="phonenum" id="phonenum" placeholder="Phone Number" />
+            <br>
+            <button id="c_save">Save</button>
+            <button class="clear">Clear</button>
+            <button class="close_">Close</button>
+        </div>
+        <br>
+        <div id="edit-contact">
+            <h1>Edit Contact</h1>
+            <input type="hidden" name="id" />
+            <input type="text" name="fname" placeholder="First Name" />
+            <br>
+            <input type="text" name="lname" placeholder="Last Name" />
+            <br>
+            <input type="email" name="email" placeholder="Email" />
+            <br>
+            <input type="text" name="phonenum" placeholder="Phone Number" />
+            <br>
+            <button id="c_save_edit">Save</button>
+            <button class="clear">Clear</button>
+            <button class="close_">Close</button>
+        </div>
+        <br>
+        <div id="create-group">
+            <h1>Create Group</h1>
+            <input type="text" name="g_name" placeholder="Group Name" /> <br>
+            <button id="g_save">Save</button>
+            <button class="clear">Clear</button>
+            <button class="close_">Close</button>
+        </div>
+        <br>
+        <div id="edit-group">
+            <h1>Rename Group</h1>
+            <input type="hidden" name="id" />
+            <input type="text" name="g_name" placeholder="Group Name" /> <br>
+            <button id="g_save_edit">Save</button>
+            <button class="clear">Clear</button>
+            <button class="close_">Close</button>
+        </div>
+        <br>
+        <div id="contact-group">
+            <h1> Add contact to group</h1>
+            <input type="hidden" name="id" />
+            <p name="fname"></p>
+            <p name="lname"></p>
+            <p name="email"></p>
+            <p name="phonenum"></p>
+            Slect Group: <br>
+            <div id="grp_list_chk"></div><br>
+            <button id="g_c_save">Save</button>
+            <button class="close_">Close</button>
+        </div>
+        <br>
+        <div id="all" style="height:80%">
+            <table class='table table-striped table-bordered' style="width:80%">
+                <tr>
+                    <th style="span1">Groups<div style="width:80%;text-align:right;display:inline-block;"><button id="create-new-group">Create
+                                New Group</button></div>
+                    </th>
+                    <th class="span2">Contacts<div style="width:80%;text-align:right;display:inline-block;"><button id="create-new-contact">Create
+                                New Contact</button></th>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="groups">
+
+                        </div>
+                    </td>
+                    <td>
+                        <div id="contacts">
+
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
