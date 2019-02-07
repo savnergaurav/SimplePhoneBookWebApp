@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "d603a47c-df88-42b9-bd44-1fedad1e1d9c",
+		"name": "SimplePhoneBookApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Groups",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://lit-stream-82638.herokuapp.com/groups",
+					"protocol": "https",
+					"host": [
+						"lit-stream-82638",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"groups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all contacts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://lit-stream-82638.herokuapp.com/contacts",
+					"protocol": "https",
+					"host": [
+						"lit-stream-82638",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a contact",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fname\": \"First\",\n\t\"lname\": \"Last\",\n\t\"email\": \"email@email.com\",\n\t\"phonenum\": \"4084084088\"\n}"
+				},
+				"url": {
+					"raw": "https://lit-stream-82638.herokuapp.com/contacts",
+					"protocol": "https",
+					"host": [
+						"lit-stream-82638",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a group",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Test Group\"\n}"
+				},
+				"url": {
+					"raw": "https://lit-stream-82638.herokuapp.com/groups",
+					"protocol": "https",
+					"host": [
+						"lit-stream-82638",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"groups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Contat to Group",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://lit-stream-82638.herokuapp.com/group/2c918aee68c7db410168c80bdf9b0003/contact/8a7aed6b68c4af540168c4b38b030003",
+					"protocol": "https",
+					"host": [
+						"lit-stream-82638",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"group",
+						"2c918aee68c7db410168c80bdf9b0003",
+						"contact",
+						"8a7aed6b68c4af540168c4b38b030003"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Contact",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://lit-stream-82638.herokuapp.com/contacts/2c92e6fa68c938210168c94b0e9d0000",
+					"protocol": "https",
+					"host": [
+						"lit-stream-82638",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"contacts",
+						"2c92e6fa68c938210168c94b0e9d0000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Group",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://lit-stream-82638.herokuapp.com/groups/2c92e6fa68c938210168c951ad350002",
+					"protocol": "https",
+					"host": [
+						"lit-stream-82638",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"groups",
+						"2c92e6fa68c938210168c951ad350002"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
