@@ -6,6 +6,8 @@
 * Database - MySQL
 * Deployment - Heroku
 
+## Note - The backend use Maven
+
 ### Access Link
 
 https://shrouded-badlands-45577.herokuapp.com/index.html
@@ -14,3 +16,8 @@ https://shrouded-badlands-45577.herokuapp.com/index.html
 
 * App - contains backend application source code
 * frontend - contains frontend application source code
+
+### Needs More Work
+
+* Front end validations
+* UI improvement
